@@ -6,7 +6,9 @@
 - [1. Web Scraping](#WebScraping)
 - [2. Scrapy Library](#Scrapy)
 - [2. Files Overview & Execution Instructions](#Repository)
+- [2. References](#References)
 
+References
 
 <a name="WebScraping"></a>
 ## 1. Web Scraping
@@ -65,12 +67,10 @@ This Project consists of 3 folders:
 2. ***Data Cleaning & Visualization***:
 After extracting the data, we copy data.json to the Data Cleaning & Visualization folder for further cleaning and analysis. The DataProcessing.ipynb Jupyter Notebook contains steps for processing the data and creating visualizations with pandas, matplotlib, and seaborn libraries, helping us to better understand our data.
 
-2. ***The Story Behind The Data***: This folder includes the ultimate visualization of our data in Data Story.pdf. It provides valuable insights into the status of leading cryptocurrency exchanges, market trends, website metrics, and more, aiding in making informed decisions.
+2. ***The Story Behind The Data***: This folder includes the ultimate visualization of our data in Data Story.pdf. It provides valuable insights into the status of leading cryptocurrency exchanges, market trends, website metrics, and more, aiding in making informed decisions. You can Downalod the final PDF file [here](https://github.com/PeymanKh/Turkish_Cryptocurrency_Exchanges_Data_Analysis/files/14620025/Data.Story.pdf).
 
-
-
-[Data Story.pdf](https://github.com/PeymanKh/Turkish_Cryptocurrency_Exchanges_Data_Analysis/files/14620025/Data.Story.pdf)
-
-
+<a name="References"></a>
+## References:
+- https://www.bitdegree.org
 
 
