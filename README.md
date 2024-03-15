@@ -5,6 +5,7 @@
 ## Table of Contents
 - [1. Web Scraping](#WebScraping)
 - [2. Scrapy Library](#Scrapy)
+- [2. Files Overview & Execution Instructions](#Repository)
 
 
 <a name="WebScraping"></a>
@@ -49,10 +50,19 @@ class ExampleSpider(scrapy.Spider):
         # Your parsing code here
 ```
 
-Then after completing your spider.py parse function, You can crawl the target web page to extract the desired data points using the folloing commad:
+After finalizing your spider.py parse function, You can crawl the target web page to extract the desired data points using the folloing commad:
 ```sh
 scrapy crawl spiderName -O fileName.json/fileName.CSV
 ```
+
+
+<a name="Repository"></a>
+## 3. Files Overview & Execution Instructions
+This Project consists of 3 folders:
+
+1. ***WebScraping***: It contains the scrapy project. The data_scraper.py in spiders folder is desinged to extract the real-time data of leading Turkish cryptocurrency exchanges from bitdegree.org which is a platform known for providing information related to cryptocurrencies. The scraping process was executed on March 14, 2024, at 13:00 (GMT+3). You can download this folder to your computer and move to `1- WebScraping/bitdegree/spiders` in the terminal using bash commands and then run `scrapy crawl data_scraper -O data.json` to execute the data extraction process. After termination, you can see the extracted data saved in `1- WebScraping/bitdegree/spiders/data.json`.
+
+2. ***Data Cleaning & Visualization***:
 
 
 
