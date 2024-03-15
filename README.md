@@ -60,12 +60,16 @@ scrapy crawl spiderName -O fileName.json/fileName.CSV
 ## 3. Files Overview & Execution Instructions
 This Project consists of 3 folders:
 
-1. ***WebScraping***: This directory houses the Scrapy project. The data_scraper.py file within the spiders folder is crafted to gather real-time data from leading Turkish cryptocurrency exchanges, utilizing bitdegree.org—a website renowned for its cryptocurrency-related information. The scraping operation was carried out on March 14, 2024, at 13:00 (GMT+3). To run the data extraction process on your machine, download this folder, navigate to `1- WebScraping/bitdegree/spiders` via terminal using bash commands, and execute `scrapy crawl data_scraper -O data.json.` Upon completion, the extracted data will be stored in `1-WebScraping/bitdegree/spiders/data.json`.
+1. ***WebScraping***: This directory houses the Scrapy project. The data_scraper.py file within the spiders folder is crafted to gather real-time data from leading Turkish cryptocurrency exchanges, utilizing bitdegree.org—a website renowned for its cryptocurrency-related information. The scraping operation was carried out on March 14, 2024, at 13:00 (GMT+3). To run the data extraction process on your machine, download this folder, navigate to `1- WebScraping/bitdegree/spiders` via terminal using bash commands, and execute `scrapy crawl data_scraper -O data.json.` Upon completion, the extracted data will be stored in `/spiders/data.json`.
 
-3. ***Data Cleaning & Visualization***:
+2. ***Data Cleaning & Visualization***:
 After extracting the data, we copy data.json to the Data Cleaning & Visualization folder for further cleaning and analysis. The DataProcessing.ipynb Jupyter Notebook contains steps for processing the data and creating visualizations with pandas, matplotlib, and seaborn libraries, helping us to better understand our data.
 
+2. ***The Story Behind The Data***: This folder includes the ultimate visualization of our data in Data Story.pdf. It provides valuable insights into the status of leading cryptocurrency exchanges, market trends, website metrics, and more, aiding in making informed decisions.
 
+
+
+[Data Story.pdf](https://github.com/PeymanKh/Turkish_Cryptocurrency_Exchanges_Data_Analysis/files/14620025/Data.Story.pdf)
 
 
 
