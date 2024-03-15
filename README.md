@@ -6,7 +6,7 @@
 - [1. Web Scraping](#WebScraping)
 - [2. Scrapy Library](#Scrapy)
 - [2. Files Overview & Execution Instructions](#Repository)
-- [2. References](#References)
+- [2. Data Source](#References)
 
 References
 
@@ -70,7 +70,7 @@ After extracting the data, we copy data.json to the Data Cleaning & Visualizatio
 2. ***The Story Behind The Data***: This folder includes the ultimate visualization of our data in Data Story.pdf. It provides valuable insights into the status of leading cryptocurrency exchanges, market trends, website metrics, and more, aiding in making informed decisions. You can Downalod the final PDF file [here](https://github.com/PeymanKh/Turkish_Cryptocurrency_Exchanges_Data_Analysis/files/14620025/Data.Story.pdf).
 
 <a name="References"></a>
-## References:
+## Data Source:
 - https://www.bitdegree.org
 
 
