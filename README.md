@@ -1,14 +1,15 @@
-# Analyzing and Visualizing the Dynamics of Leading Cryptocurrency Exchanges in Turkey
+# Extracting and Visualizing the Dynamics of Leading Cryptocurrency Exchanges in Turkey
+
+<img title="a title" alt="Alt text" src="https://www.cpapracticeadvisor.com/wp-content/uploads/sites/2/2022/07/30017/big_data_1_.5afaec15da23c.png">
 
 ## Table of Contents
 - [1. Web Scraping](#WebScraping)
 - [2. Scrapy Library](#Scrapy)
 
 
-
 <a name="WebScraping"></a>
 ## 1. Web Scraping
-Web scraping, also known as web data extraction, is the process of retrieving or “scraping” data from websites. This technique is used to convert the data available on websites into a structured format that can be stored and analyzed. Web scraping is widely used in various industries for different purposes, such as price monitoring, market research, lead generation, and competitive analysis. Here's a breakdown of the key aspects of web scraping:
+Web scraping, also known as web data extraction, is the process of retrieving or “scraping” data from websites. This technique is used to convert the data available on websites into a structured format that can be stored and analyzed. Web scraping is widely used in various industries for different purposes, such as price monitoring, market research, lead generation, and competitive analysis.
 
 ## How Web Scraping Works:
 1. **Requesting Data**: The first step involves sending a request to the website’s server to retrieve the webpage. This is usually done using HTTP or HTTPS protocols.
@@ -26,7 +27,7 @@ Scrapy is a fast, high-level web crawling and web scraping framework, widely use
 pip install scrapy
 ```
 
-Extracting data using Scrapy library is done by "spiders", which are classes in Scrapy that detail how to perform the scraping. Spiders include the initial URLs to scrape, how to follow links, and how to parse the downloaded page content to extract data. To create a project and setup a spider you can:
+Extracting data using Scrapy library is done by "spiders", which are classes in Scrapy that detail how to perform the scraping. Spiders include the initial URLs to scrape, how to follow links, and how to parse the downloaded page content to extract data. To create a project and setup a spider you can use following commands on your IDE's terminal:
 ```sh
 scrapy startproject projectName
 ```
@@ -34,7 +35,7 @@ scrapy startproject projectName
 scrapy genspider spiderName URL
 ```
 
-After initializing your project using above codes, You can see the project's spider script in the following format:
+After initializing your project using above commands, You can see your project's spider.py in the following format:
 
 ```python
 import scrapy
@@ -48,6 +49,10 @@ class ExampleSpider(scrapy.Spider):
         # Your parsing code here
 ```
 
+Then after completing your spider.py parse function, You can crawl the target web page to extract the desired data points using the folloing commad:
+```sh
+scrapy crawl spiderName -O fileName.json/fileName.CSV
+```
 
 
 
