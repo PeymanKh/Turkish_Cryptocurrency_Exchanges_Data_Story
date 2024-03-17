@@ -37,10 +37,16 @@ class DataScraperSpider(scrapy.Spider):
         btcturk_data = {
             'btcturk_volume': str(btcturk_statics[0]).split(),
             'btcturk_volume_in_btc': str(btcturk_statics[1]).split(),
+            '7d_volume': response.css(
+                'div.container.mt-4 div.row div.col-12.col-md-12.content.content-description p strong:nth-child(3)::text').get(),
             'btcturk_total_cryptocurrencies': str(btcturk_statics[2]).split(),
             'btcturk_markets_raw': str(response.css('div.overall-stats span.stats-value::text')[3].get()).split(),
             'btcturk_market_dominance': str(btcturk_statics[-2]).split(),
             'btcturk_market_rank': str(btcturk_statics[-1]).split(),
+            'ahref_ranking': response.css(
+                'div.row.px-0.px-md-2 div:nth-child(4) div.socials-card.card-shadow.p-3.h-100 div.wrp.d-flex.flex-column div:nth-child(2) div.d-flex.flex-column div:nth-child(1) p.mb-0.stat.text-left::text').get(),
+            'mo_organic_traffic': response.css(
+                'div.row.px-0.px-md-2 div:nth-child(4) div.socials-card.card-shadow.p-3.h-100 div.wrp.d-flex.flex-column div:nth-child(2) div.d-flex.flex-column div:nth-child(2) p.mb-0.stat.text-left::text').get(),
             'markets': []  # Initialize an empty list to store results
         }
 
@@ -185,10 +191,17 @@ class DataScraperSpider(scrapy.Spider):
         binance_data = {
             'binance_volume': str(binance_statics[0]).split(),
             'binance_volume_in_btc': str(binance_statics[1]).split(),
+            '7d_volume': response.css(
+                'div.container.mt-4 div.row div.col-12.col-md-12.content.content-description p strong:nth-child(3)::text').get(),
             'binance_total_cryptocurrencies': str(binance_statics[2]).split(),
             'binance_markets': str(binance_statics[3]).split(),
             'binance_market_dominance': str(binance_statics[-2]).split(),
             'binance_market_rank': str(binance_statics[-1]).split(),
+            'ahref_ranking': response.css(
+                'div.row.px-0.px-md-2 div:nth-child(4) div.socials-card.card-shadow.p-3.h-100 div.wrp.d-flex.flex-column div:nth-child(2) div.d-flex.flex-column div:nth-child(1) p.mb-0.stat.text-left::text').get(),
+            'mo_organic_traffic': response.css(
+                'div.row.px-0.px-md-2 div:nth-child(4) div.socials-card.card-shadow.p-3.h-100 div.wrp.d-flex.flex-column div:nth-child(2) div.d-flex.flex-column div:nth-child(2) p.mb-0.stat.text-left::text').get(),
+
             'markets': []
         }
 
@@ -310,10 +323,17 @@ class DataScraperSpider(scrapy.Spider):
         paribu_data = {
             'paribu_volume': str(paribu_statics[0]).split(),
             'paribu_volume_in_btc': str(paribu_statics[1]).split(),
+            '7d_volume': response.css(
+                'div.container.mt-4 div.row div.col-12.col-md-12.content.content-description p strong:nth-child(3)::text').get(),
             'paribu_total_cryptocurrencies': str(paribu_statics[2]).split(),
             'paribu_markets': str(paribu_statics[3]).split(),
             'paribu_market_dominance': str(paribu_statics[-2]).split(),
             'paribu_market_rank': str(paribu_statics[-1]).split(),
+            'ahref_ranking': response.css(
+                'div.row.px-0.px-md-2 div:nth-child(4) div.socials-card.card-shadow.p-3.h-100 div.wrp.d-flex.flex-column div:nth-child(2) div.d-flex.flex-column div:nth-child(1) p.mb-0.stat.text-left::text').get(),
+            'mo_organic_traffic': response.css(
+                'div.row.px-0.px-md-2 div:nth-child(4) div.socials-card.card-shadow.p-3.h-100 div.wrp.d-flex.flex-column div:nth-child(2) div.d-flex.flex-column div:nth-child(2) p.mb-0.stat.text-left::text').get(),
+
             'markets': []
         }
 
